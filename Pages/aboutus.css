@@ -1,43 +1,112 @@
-/* Basic styling for the body */
-body {
+/* Base Styles for All Screen Sizes */
+body, html {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-
-header{
-    width: 100%;
-    height: 50px;
-   color: rgb(255, 174, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
-.name{
-width:150px;
-height:40px;
-margin-block: 5px;
-border: 1px solid rgb(241, 238, 44);
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: bold;
 
+header .name {
+    font-size: 2em;
+    font-weight: bold;
 }
-h3{
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
-.content{
-    width:100%;
-    height:300px;
-    margin-top: 80px;
-    padding: 5px;
+
+footer h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
 }
-.legal-info{
-    display: flex;
+
+footer hr {
+    border: 1px solid #555;
+    margin: 20px 0;
 }
-p{
-    margin-inline:5px;
+
+footer .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+footer .legal-info {
+    margin-top: 20px;
+}
+
+footer .legal-info p {
+    margin: 5px 0;
+}
+
+footer .legal-info a {
+    color: #ddd; /* Light color to stand out against dark background */
+    text-decoration: none;
+    font-weight: bold; /* Make the links stand out */
+}
+
+footer .legal-info a:hover {
+    color: #fff; /* Change to white on hover for better visibility */
+    text-decoration: underline;
+}
+
+/* Media Query for Tablets and Smaller Desktops (up to 1024px) */
+@media (max-width: 1024px) {
+    header .name {
+        font-size: 1.8em;
+    }
+
+    footer h3 {
+        font-size: 1.4em;
+    }
+
+    footer .content {
+        padding: 0 10px;
+    }
+}
+
+/* Media Query for Landscape Tablets and Smaller Screens (up to 768px) */
+@media (max-width: 768px) {
+    header .name {
+        font-size: 1.5em;
+    }
+
+    footer h3 {
+        font-size: 1.2em;
+    }
+
+    footer .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+/* Media Query for Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+    header .name {
+        font-size: 1.2em;
+    }
+
+    footer h3 {
+        font-size: 1em;
+    }
+
+    footer .content {
+        padding: 0 5px;
+        font-size: 0.9em;
+    }
 }
