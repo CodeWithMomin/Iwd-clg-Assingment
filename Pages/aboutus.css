@@ -4,12 +4,12 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #f5eded;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #141414;
+    color: rgb(231, 133, 21);
     text-align: center;
     padding: 20px;
 }
@@ -17,10 +17,11 @@ header {
 header .name {
     font-size: 2em;
     font-weight: bold;
+   
 }
 
 footer {
-    background-color: #333;
+    background-color: #141414;
     color: white;
     padding: 20px;
     text-align: center;
@@ -65,48 +66,3 @@ footer .legal-info a:hover {
 }
 
 /* Media Query for Tablets and Smaller Desktops (up to 1024px) */
-@media (max-width: 1024px) {
-    header .name {
-        font-size: 1.8em;
-    }
-
-    footer h3 {
-        font-size: 1.4em;
-    }
-
-    footer .content {
-        padding: 0 10px;
-    }
-}
-
-/* Media Query for Landscape Tablets and Smaller Screens (up to 768px) */
-@media (max-width: 768px) {
-    header .name {
-        font-size: 1.5em;
-    }
-
-    footer h3 {
-        font-size: 1.2em;
-    }
-
-    footer .content {
-        padding: 0 10px;
-        text-align: center;
-    }
-}
-
-/* Media Query for Extra Small Devices (up to 480px) */
-@media (max-width: 480px) {
-    header .name {
-        font-size: 1.2em;
-    }
-
-    footer h3 {
-        font-size: 1em;
-    }
-
-    footer .content {
-        padding: 0 5px;
-        font-size: 0.9em;
-    }
-}
